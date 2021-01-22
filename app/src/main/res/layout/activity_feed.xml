@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FeedActivity"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mama Çeşidi"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp" />
+        
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/group1">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kedi Maması"
+                    android:id="@+id/kedimama"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Köpek Maması"
+                    android:id="@+id/kopekmama"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yemek"
+                    android:id="@+id/yemek"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bıraktığınız Yaklaşık Miktar"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/group2">
+
+                <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 gr"
+                android:id="@+id/elli"
+                android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150 gr"
+                    android:id="@+id/yuzelli"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250 gr"
+                    android:id="@+id/ikiyuzelli"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+500 gr"
+                    android:id="@+id/besyuz"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/biraktim"
+            android:text="BIRAKTIM"
+            android:onClick="button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW MARKETS"
+            android:onClick="markets"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="338dp"
+                app:mapbox_cameraTargetLat="-32.557013"
+                app:mapbox_cameraTargetLng="-56.149056"
+                app:mapbox_cameraZoom="5.526846" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3b5360"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp">
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="MAJORITY"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center"
+                 android:textColor="#f8dc81">
+
+             </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.Sultan Kocaman GÖKÇEOĞLU"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#f8dc81">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.Deha CAR"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#f8dc81">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.Deniz ATALAY"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#f8dc81">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.Musa KARAOĞLU"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#f8dc81">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/majority"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#f8dc81">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

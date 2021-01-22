@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "393680833779",
+    "firebase_url": "https://sehrinkedisi.firebaseio.com",
+    "project_id": "sehrinkedisi",
+    "storage_bucket": "sehrinkedisi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393680833779:android:ee4c2940bde60c8d3b7b86",
+        "android_client_info": {
+          "package_name": "com.javacodegeeks.sehrinkedisi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393680833779-l2fv792qurg1cng17d8bjcjaurpotin8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_MIniRIJD2kx9yYrxECM9xa1YnsVPgmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393680833779-l2fv792qurg1cng17d8bjcjaurpotin8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
