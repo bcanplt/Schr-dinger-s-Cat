@@ -2,4 +2,4 @@
 
 Developed by,
 
-Baran CANPOLAT, N.N. Deha CAR, Deniz ATALAY, Musa KARAOĞLU
+Baran CANPOLAT, N.N. Deha CAR, Deniz ATALAY, Musa İlker KARAOĞLU
