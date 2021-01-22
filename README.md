@@ -1,5 +1,5 @@
 # Schrödinger's Cat Mobile Application
 
-Develop by,
+Developed by,
 
 Baran CANPOLAT, Nurulah Nadir Deha CAR, Deniz ATALAY, Musa KARAOĞLU
